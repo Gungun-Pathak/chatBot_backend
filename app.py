@@ -7,6 +7,11 @@ from routes.user_routes import user_bp
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173"], supports_credentials=True)
 
+@app.route("/", methods=["GET"])
+def home():
+    return {"message": "🟢 Backend is live!"}, 200
+
+
 
 # Register Blueprints
 def register_routes(app):
