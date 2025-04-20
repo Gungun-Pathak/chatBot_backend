@@ -5,7 +5,11 @@ from routes.conversation_routes import conversation_bp
 from routes.user_routes import user_bp 
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"], supports_credentials=True)
+CORS(app, 
+     origins=["http://localhost:5173", "https://chat-bot-frontend-topaz.vercel.app"],
+     methods=["GET", "POST", "PUT", "DELETE"],
+     allow_headers=["Content-Type", "Authorization"],
+     supports_credentials=True)
 
 @app.route("/", methods=["GET"])
 def home():
