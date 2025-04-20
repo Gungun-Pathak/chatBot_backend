@@ -1,0 +1,579 @@
+{
+    "status": "OK",
+    "request_id": "97c750f1-37df-441f-99eb-abe47327865c",
+    "parameters": {
+        "query": "Technology events in india",
+        "is_virtual": false,
+        "date": "any",
+        "start": 0
+    },
+    "data": [
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA0LTIzfDEyMTA1Nzc4MTI0NzE2MDQxNDQy",
+            "name": "Technology Events and Conferences 2025: TechNext Summit",
+            "link": "https://government.economictimes.indiatimes.com/futuretech-summit?ag=events_listing&utm_source=events_listing&utm_medium=eventListing",
+            "description": "Technology Events & Conferences: ET Government Maharashtra TechNext Summit, Mumbai in collaboration with the Department of Information Technology General Administration, Government of Maharashtra...",
+            "language": "en",
+            "date_human_readable": "Wed, Apr 23, 8:00 AM \u2013 11:59 PM GMT+5:30",
+            "start_time": "2025-04-23 08:00:00",
+            "start_time_utc": "2025-04-23 02:30:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-04-23 23:59:00",
+            "end_time_utc": "2025-04-23 18:29:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjMGkr8O5vTMdosvpg00tm_RAmLZdwre1kJyxrMZG8w__O9Z-ZR42WrhChQ&s=10",
+            "publisher": "Indiatimes.com",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://government.economictimes.indiatimes.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "government.economictimes.indiatimes.com",
+            "ticket_links": [
+                {
+                    "source": "ET Government",
+                    "link": "https://government.economictimes.indiatimes.com/futuretech-summit?ag=events_listing&utm_source=events_listing&utm_medium=eventListing",
+                    "fav_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://indiatimes.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Indiatimes.com",
+                    "link": "https://government.economictimes.indiatimes.com/futuretech-summit?ag=events_listing&utm_source=events_listing&utm_medium=eventListing"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3be7d19394b52bb3:0x1d4d1ccfdb6b76af",
+                "name": "President, Mumbai - IHCL SeleQtions",
+                "phone_number": "+912266650808",
+                "website": "https://www.seleqtionshotels.com/en-in/president-mumbai",
+                "review_count": 11425,
+                "rating": 4.4,
+                "subtype": "Hotel",
+                "subtypes": [
+                    "Hotel"
+                ],
+                "full_address": "President, Mumbai - IHCL SeleQtions, 90, Ganesh Murti Nagar, Cuffe Parade, Mumbai, Maharashtra 400005, India",
+                "latitude": 18.9145683,
+                "longitude": 72.82080619999999,
+                "district": "Ganesh Murti Nagar, Cuffe Parade",
+                "street_number": "90",
+                "street": "90",
+                "city": "Mumbai",
+                "zipcode": "400005",
+                "state": "Maharashtra",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/1tg2j43t"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA0LTE3fDEyMzE0MDg3MzQ1ODQ5MDk2ODI0",
+            "name": "Hydrogen Technology Expo",
+            "link": "https://10times.com/e1xp-1f4k-0h0h",
+            "description": "Hydrogen Technology Expo is an essential event for exploring advanced hydrogen and fuel cell technologies, uniting industry leaders to innovate low-carbon production, storage, distribution, and...",
+            "language": "en",
+            "date_human_readable": "Fri, Apr 18, 2:30 AM \u2013 Sat, Apr 19, 2:30 AM GMT+5:30",
+            "start_time": "2025-04-18 02:30:00",
+            "start_time_utc": "2025-04-17 21:00:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-04-19 02:30:00",
+            "end_time_utc": "2025-04-18 21:00:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkXEYhOOpmxGDmRWzk617pjloUTUZrjfaT165qtR7Kw&s=10",
+            "publisher": "10Times",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://10times.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "10times.com",
+            "ticket_links": [
+                {
+                    "source": "Globy",
+                    "link": "https://globy.com/events-calendar/hydrogen-technology-expo-079f88",
+                    "fav_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://globy.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                },
+                {
+                    "source": "10Times",
+                    "link": "https://10times.com/e1xp-1f4k-0h0h",
+                    "fav_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://10times.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Globy.com",
+                    "link": "https://globy.com/events-calendar/hydrogen-technology-expo-079f88"
+                }
+            ],
+            "venue": {
+                "google_id": "0x390cfd31be8050c3:0x396a2ac036490cb8",
+                "name": "The Lalit New Delhi",
+                "phone_number": "+911144447777",
+                "website": "https://www.thelalit.com/the-lalit-delhi",
+                "review_count": 29247,
+                "rating": 4.4,
+                "subtype": "Hotel",
+                "subtypes": [
+                    "Hotel"
+                ],
+                "full_address": "The Lalit New Delhi, Fire Brigade Lane, Barakhamba, New Delhi, Delhi 110001, India",
+                "latitude": 28.6316615,
+                "longitude": 77.2272325,
+                "district": "Fire Brigade Lane, Barakhamba",
+                "street": null,
+                "city": "New Delhi",
+                "zipcode": "110001",
+                "state": "Delhi",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/12q4wf58d"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA1LTE2fDE3MjgxODMxNDIzNjkxMTUyNzEz",
+            "name": "International Conference on Recent Engineering and Technology",
+            "link": "https://www.knowafest.com/explore/college/Sri-Venkateshwara-College-of-Engineering-Bengaluru",
+            "description": "About College For two decades SVCE has providing peerless academic, administrative and pastoral support to students hoping to succeed and beyond. From academic aspirations to the simple day-to-day...",
+            "language": "en",
+            "date_human_readable": "Fri, May 16 \u2013 Sat, May 17",
+            "start_time": "2025-05-16 12:00:00",
+            "start_time_utc": "2025-05-16 12:00:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-05-17 12:00:00",
+            "end_time_utc": "2025-05-17 12:00:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUwuO6H0i-ihQqN9I2c8Rrp6_VJvnhcr5PK1x7fKDaKg&s=10",
+            "publisher": "KnowaFest",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.knowafest.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "www.knowafest.com",
+            "ticket_links": [
+                {
+                    "source": "KnowaFest",
+                    "link": "https://www.knowafest.com/explore/college/Sri-Venkateshwara-College-of-Engineering-Bengaluru",
+                    "fav_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://knowafest.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                },
+                {
+                    "source": "10Times",
+                    "link": "https://10times.com/venues/sri-venkateshwara-college-engineering",
+                    "fav_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://10times.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Knowafest.com",
+                    "link": "https://www.knowafest.com/explore/events/2024/12/2901-16th-international-conference-recent-engineering-technology-icret-2025-sri-venkateshwara-college-bengaluru"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3bae1eb733c68175:0xafcf83dbd629afcf",
+                "name": "SVCE Bengaluru: SRI VENKATESHWARA COLLEGE OF ENGINEERING",
+                "phone_number": "+919916775988",
+                "website": "https://www.svcengg.edu.in",
+                "review_count": 1136,
+                "rating": 4.1,
+                "subtype": "College",
+                "subtypes": [
+                    "College"
+                ],
+                "full_address": "SVCE Bengaluru: SRI VENKATESHWARA COLLEGE OF ENGINEERING, Kempegowda International Airport Bengaluru, Road, Kempegowda Int'l Airport Rd, Vidya Nagar, Central Telecom Society, Bengaluru, Karnataka 562157, India",
+                "latitude": 13.1596355,
+                "longitude": 77.63616739999999,
+                "district": "Vidya Nagar, Central Telecom Society",
+                "street": "Kempegowda International Airport Bengaluru, Road, Kempegowda Int'l Airport Rd",
+                "city": "Bengaluru",
+                "zipcode": "562157",
+                "state": "Karnataka",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/m/0g5qx08"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA0LTI1fDY4MjU0MDkyMTY0MTg4OTY3NQ==",
+            "name": "IEEE Bangalore Humanitarian Technology Conference",
+            "link": "https://10times.com/venues/kls-gogte-institute-of-technology",
+            "description": "KLS Gogte Institute of Technology situated in Belagavi, India which is a perfect venue for all types of events & trade shows. 3 events hosted * 32 people following * Ranked 8 in Belagavi, India...",
+            "language": "en",
+            "date_human_readable": "Fri, Apr 25 \u2013 Sat, Apr 26",
+            "start_time": "2025-04-25 12:00:00",
+            "start_time_utc": "2025-04-25 12:00:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-04-26 12:00:00",
+            "end_time_utc": "2025-04-26 12:00:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMkUCsFtJm0_r8UqIEAvbRCNOIi60wGKLe4Cb1BoUXVC863RK6uGHYvy9eTI&s=10",
+            "publisher": "10times.com",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://10times.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "10times.com",
+            "ticket_links": [
+                {
+                    "source": "10Times",
+                    "link": "https://10times.com/venues/kls-gogte-institute-of-technology",
+                    "fav_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://10times.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "10times.com",
+                    "link": "https://10times.com/venues/kls-gogte-institute-of-technology"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3bbf65c556d2f08f:0xcbbcbb73e1286392",
+                "name": "KLS Gogte Institute of Technology",
+                "phone_number": "+918171945201",
+                "website": "http://www.git.edu",
+                "review_count": 1139,
+                "rating": 4.4,
+                "subtype": "Engineering school",
+                "subtypes": [
+                    "Engineering school",
+                    "College"
+                ],
+                "full_address": "KLS Gogte Institute of Technology, Udyambag Industrial Area, Udyambag, Belagavi, Karnataka 590006, India",
+                "latitude": 15.8149796,
+                "longitude": 74.4871994,
+                "district": "Udyambag Industrial Area, Udyambag",
+                "street": null,
+                "city": "Belagavi",
+                "zipcode": "590006",
+                "state": "Karnataka",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/m/02rh9kx"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA2LTA5fDIyMDk1ODczNDM2NjY1MDY0NjA=",
+            "name": "The Financial Technology Summit",
+            "link": "https://www.eworldtrade.com/events/the-financial-technology-summit/",
+            "description": "The Financial Technology Summit 2023 happens in Panjim, India Jun, 2023 focus on Business Services. The cycle of the trade fair is , organize by UBM India Pvt. Ltd. at Goa Marriott Resort & Spa.",
+            "language": "en",
+            "date_human_readable": "Mon, Jun 9, 8:53 PM \u2013 Wed, Jun 11, 8:53 PM GMT+5:30",
+            "start_time": "2025-06-09 20:53:00",
+            "start_time_utc": "2025-06-09 15:23:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-06-11 20:53:00",
+            "end_time_utc": "2025-06-11 15:23:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BLqVrCWBGB5V9yFuJldJZ3mhAD_q1O2VLWrLy3sVBFJLSYeDgC_YKpwygg&s=10",
+            "publisher": "Eworldtrade.com",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "www.eworldtrade.com",
+            "ticket_links": [
+                {
+                    "source": "eWorldTrade",
+                    "link": "https://www.eworldtrade.com/events/the-financial-technology-summit/",
+                    "fav_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Eworldtrade.com",
+                    "link": "https://www.eworldtrade.com/events/the-financial-technology-summit/"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3bbfc085624c679b:0xd3f137e3ddd48a8c",
+                "name": "Goa Marriott Resort & Spa",
+                "phone_number": "+918326656000",
+                "website": "https://www.marriott.com/en-us/hotels/goimc-goa-marriott-resort-and-spa/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+                "review_count": 8478,
+                "rating": 4.5,
+                "subtype": "Hotel",
+                "subtypes": [
+                    "Hotel",
+                    "Meeting planning service",
+                    "Wedding venue"
+                ],
+                "full_address": "Goa Marriott Resort & Spa, Miramar, Panaji, Goa 403001, India",
+                "latitude": 15.487436299999999,
+                "longitude": 73.80939339999999,
+                "district": "Miramar",
+                "street": null,
+                "city": "Panaji",
+                "zipcode": "403001",
+                "state": "Goa",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/1tcwdf6_"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA0LTE2fDEzNDkyODY3ODgyNjc3Njk3Nzk5",
+            "name": "International Conference on Computing and Emerging Technologies for Sustainable Planet (ICCETSP 2025)",
+            "link": "https://www.knowafest.com/explore/events/2025/02/0316-international-conference-computing-emerging-technologies-for-sustainable-planet-iccetsp-2025-srm-institute-science-technology-vadapalani-campus-chennai",
+            "description": "Upcoming International Conference: ICCETSP 2025 We feel proud to announce the upcoming International Conference on Computing and Emerging Technologies for Sustainable Planet (ICCETSP 2025...",
+            "language": "en",
+            "date_human_readable": "Wed, Apr 16 \u2013 Thu, Apr 17",
+            "start_time": "2025-04-16 12:00:00",
+            "start_time_utc": "2025-04-16 12:00:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-04-17 12:00:00",
+            "end_time_utc": "2025-04-17 12:00:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEr1bxW4KQiybE2U4jNlWByTGlkRvr8s5VvbftpsMz38ZEG9FVM3OoKl6Gw&s",
+            "publisher": "KnowaFest",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.knowafest.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "www.knowafest.com",
+            "ticket_links": [
+                {
+                    "source": "KnowaFest",
+                    "link": "https://www.knowafest.com/explore/category/International_Conference_on_Computing_and_Emerging_Technologies%C2%A0for%C2%A0Sustainable_Planet_(ICCETSP_2025)",
+                    "fav_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://knowafest.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Knowafest.com",
+                    "link": "https://www.knowafest.com/explore/category/International_Conference_on_Computing_and_Emerging_Technologies%C2%A0for%C2%A0Sustainable_Planet_(ICCETSP_2025)"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3a5266ea218fc7e3:0x70bbbca6edfc9243",
+                "name": "SRM University Vadapalani City Campus",
+                "phone_number": "+914443969966",
+                "website": "https://www.srmistvdp.edu.in",
+                "review_count": 534,
+                "rating": 4.2,
+                "subtype": "University",
+                "subtypes": [
+                    "University"
+                ],
+                "full_address": "c block, SRM University Vadapalani City Campus, 1, 100 Feet Rd, Vadapalani, Chennai, Tamil Nadu 600026, India",
+                "latitude": 13.0517639,
+                "longitude": 80.210512,
+                "district": "Vadapalani",
+                "street_number": "1",
+                "street": "c block, 1, 100 Feet Rd",
+                "city": "Chennai",
+                "zipcode": "600026",
+                "state": "Tamil Nadu",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/11bw65hl4b"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA4LTAxfDMyNTg1ODExNjM5OTgxNTgxOTU=",
+            "name": "Tech Hr Conference & Expo",
+            "link": "https://www.eworldtrade.com/events/tech-hr-conference-amp-expo/",
+            "description": "Tech Hr Conference & Expo 2023 happens in Gurgaon, India Aug, 2023 focus on Business Services. The cycle of the trade fair is , organize by People Matters Media Pvt. Ltd. at The Leela Ambience...",
+            "language": "en",
+            "date_human_readable": "Fri, Aug 1, 8:53 PM \u2013 Sat, Aug 2, 8:53 PM GMT+5:30",
+            "start_time": "2025-08-01 20:53:00",
+            "start_time_utc": "2025-08-01 15:23:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-08-02 20:53:00",
+            "end_time_utc": "2025-08-02 15:23:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BLqVrCWBGB5V9yFuJldJZ3mhAD_q1O2VLWrLy3sVBFJLSYeDgC_YKpwygg&s=10",
+            "publisher": "Eworldtrade.com",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "www.eworldtrade.com",
+            "ticket_links": [
+                {
+                    "source": "eWorldTrade",
+                    "link": "https://www.eworldtrade.com/events/tech-hr-conference-amp-expo/",
+                    "fav_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Eworldtrade.com",
+                    "link": "https://www.eworldtrade.com/events/tech-hr-conference-amp-expo/"
+                }
+            ],
+            "venue": {
+                "google_id": "0x39679c8110a3d073:0x75e45c130d24bf1b",
+                "name": "The Leela Ambience Gurugram Hotel & Residences - Millennium City's Only Lifestyle Hotel & Residences",
+                "phone_number": "+911244771234",
+                "website": "https://www.theleela.com/the-leela-ambience-gurugram-hotel-residences",
+                "review_count": 30893,
+                "rating": 4.6,
+                "subtype": "Hotel",
+                "subtypes": [
+                    "Hotel",
+                    "Business center",
+                    "Conference center",
+                    "Golf course",
+                    "Wedding venue"
+                ],
+                "full_address": "The Leela Ambience Gurugram Hotel & Residences - Millennium City's Only Lifestyle Hotel & Residences, National Highway 8, Ambience Island, DLF Phase 3, Sector 24, Gurugram, Haryana 122002, India",
+                "latitude": 28.505363799999998,
+                "longitude": 77.0964984,
+                "district": "Ambience Island, DLF Phase 3, Sector 24",
+                "street_number": "8",
+                "street": "National Highway 8",
+                "city": "Gurugram",
+                "zipcode": "122002",
+                "state": "Haryana",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/1v_vr92b"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA1LTE0fDUwMjU0MTk2ODY3MzUyNjAzODA=",
+            "name": "International Conference On Innovative Trend In Science, Engineering And Technology",
+            "link": "https://www.eworldtrade.com/events/international-conference-on-innovative-trend-in-science-engineering-and-technology/",
+            "description": "International Conference On Innovative Trend In Science, Engineering And Technology 2023 happens in Pune, India May, 2023 focus on Research & Development Services. The cycle of the trade fair is ...",
+            "language": "en",
+            "date_human_readable": "Wed, May 14, 8:53 PM GMT+5:30",
+            "start_time": "2025-05-14 20:53:00",
+            "start_time_utc": "2025-05-14 15:23:00",
+            "start_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BLqVrCWBGB5V9yFuJldJZ3mhAD_q1O2VLWrLy3sVBFJLSYeDgC_YKpwygg&s=10",
+            "publisher": "Eworldtrade.com",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "www.eworldtrade.com",
+            "ticket_links": [
+                {
+                    "source": "eWorldTrade",
+                    "link": "https://www.eworldtrade.com/events/international-conference-on-innovative-trend-in-science-engineering-and-technology/",
+                    "fav_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Eworldtrade.com",
+                    "link": "https://www.eworldtrade.com/events/international-conference-on-innovative-trend-in-science-engineering-and-technology/"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3bc2c131bf6af301:0x5dc248051ab73f87",
+                "name": "Hotel Madhav International Pune",
+                "phone_number": "+912026059118",
+                "website": "https://www.hotelmadhavint.com/index.html",
+                "review_count": 614,
+                "rating": 3.9,
+                "subtype": "Hotel",
+                "subtypes": [
+                    "Hotel"
+                ],
+                "full_address": "Hotel Madhav International Pune, Before Hotel Sheraton Grand, Railway Station, 6A, Ramabai Ambedkar Rd, behind Pune, Sangamvadi, Pune, Maharashtra 411001, India",
+                "latitude": 18.530818999999997,
+                "longitude": 73.8744629,
+                "district": "Sangamvadi",
+                "street_number": "6",
+                "street": "Before Hotel Sheraton Grand, Railway Station, 6A, Ramabai Ambedkar Rd, behind Pune",
+                "city": "Pune",
+                "zipcode": "411001",
+                "state": "Maharashtra",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/11mvgqw8pd"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA1LTIxfDE0NzkxNDM0NzU3NTY3NTQ4NDQ3",
+            "name": "International Conference On Advances on Engineering And Technology",
+            "link": "https://www.eworldtrade.com/events/international-conference-on-advances-on-engineering-and-technology/",
+            "description": "International Conference On Advances on Engineering And Technology 2023 happens in Panjim, India May, 2023 focus on Research & Development Services. The cycle of the trade fair is , organize by...",
+            "language": "en",
+            "date_human_readable": "Wed, May 21, 8:53 PM GMT+5:30",
+            "start_time": "2025-05-21 20:53:00",
+            "start_time_utc": "2025-05-21 15:23:00",
+            "start_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BLqVrCWBGB5V9yFuJldJZ3mhAD_q1O2VLWrLy3sVBFJLSYeDgC_YKpwygg&s=10",
+            "publisher": "Eworldtrade.com",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "www.eworldtrade.com",
+            "ticket_links": [
+                {
+                    "source": "eWorldTrade",
+                    "link": "https://www.eworldtrade.com/events/international-conference-on-advances-on-engineering-and-technology/",
+                    "fav_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://eworldtrade.com&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Eworldtrade.com",
+                    "link": "https://www.eworldtrade.com/events/international-conference-on-advances-on-engineering-and-technology/"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3bbfc088b51278ed:0x84d7463373031c66",
+                "name": "Hotel Manvin's, Panjim, Goa",
+                "phone_number": "+919766316024",
+                "website": "http://www.manvinshotels.com",
+                "review_count": 625,
+                "rating": 3.5,
+                "subtype": "Hotel",
+                "subtypes": [
+                    "Hotel"
+                ],
+                "full_address": "Hotel Manvin's, Panjim, Goa, Municipal Gardens (East, Church Square, Altinho, Panaji, Goa 403001, India",
+                "latitude": 15.4992883,
+                "longitude": 73.8288276,
+                "district": "Church Square, Altinho",
+                "street": "Municipal Gardens (East",
+                "city": "Panaji",
+                "zipcode": "403001",
+                "state": "Goa",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/g/1tf73zvg"
+            }
+        },
+        {
+            "event_id": "L2F1dGhvcml0eS9ob3Jpem9uL2NsdXN0ZXJlZF9ldmVudC8yMDI1LTA0LTE2fDE2ODU0NzA0MTcxMzI2ODUxMTk3",
+            "name": "International Conference on AI for the Oceans",
+            "link": "https://oceandecade.org/events/international-conference-on-ai-for-the-oceans/",
+            "description": "Mark your calendars for April 16-18, 2025, as we explore groundbreaking innovations in AI for ocean exploration and sustainability.",
+            "language": "en",
+            "date_human_readable": "Wed, Apr 16 \u2013 Fri, Apr 18",
+            "start_time": "2025-04-16 12:00:00",
+            "start_time_utc": "2025-04-16 12:00:00",
+            "start_time_precision_sec": 1,
+            "end_time": "2025-04-18 12:00:00",
+            "end_time_utc": "2025-04-18 12:00:00",
+            "end_time_precision_sec": 1,
+            "is_virtual": false,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWoH9y0S8Nqy6gT63mgo_59kPRjFz0O31_zMdP8Kk1f5tEjPt9G8cL2IkyWA&s=10",
+            "publisher": "Oceandecade.org",
+            "publisher_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://oceandecade.org&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2",
+            "publisher_domain": "oceandecade.org",
+            "ticket_links": [
+                {
+                    "source": "Events - Ocean Decade",
+                    "link": "https://oceandecade.org/events/international-conference-on-ai-for-the-oceans/",
+                    "fav_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://oceandecade.org&client=HORIZON&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2"
+                }
+            ],
+            "info_links": [
+                {
+                    "source": "Oceandecade.org",
+                    "link": "https://oceandecade.org/events/international-conference-on-ai-for-the-oceans/"
+                }
+            ],
+            "venue": {
+                "google_id": "0x3a52f712b82a78d9:0xfdb944a3aee53831",
+                "name": "SRM Institute of Science and Technology",
+                "phone_number": "+914427417000",
+                "website": "https://www.srmist.edu.in",
+                "review_count": 7441,
+                "rating": 4.3,
+                "subtype": "University",
+                "subtypes": [
+                    "University",
+                    "Public university"
+                ],
+                "full_address": "R2FV+6Q7 SRM Institute of Science and Technology, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203, India",
+                "latitude": 12.823032999999999,
+                "longitude": 80.044416,
+                "district": "Potheri, SRM Nagar",
+                "street_number": "2",
+                "street": "R2FV+6Q7",
+                "city": "Kattankulathur",
+                "zipcode": "603203",
+                "state": "Tamil Nadu",
+                "country": "IN",
+                "timezone": "Asia/Calcutta",
+                "google_mid": "/m/0bp79z"
+            }
+        }
+    ]
+}

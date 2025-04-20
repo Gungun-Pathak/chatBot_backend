@@ -1,0 +1,30 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables (never commit these for security)
+.env
+
+# Log files
+*.log
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+
+# MongoDB lock files (if using local MongoDB)
+*.lock
+
+# Gemini API keys or sensitive configurations
+gemini_config.json
+
+
+
+# Node modules
