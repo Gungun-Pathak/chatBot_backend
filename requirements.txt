@@ -54,6 +54,7 @@ nltk==3.9.1
 numpy==2.2.4
 orjson==3.10.16
 packaging==24.2
+phonenumbers==9.0.3
 propcache==0.3.1
 proto-plus==1.26.1
 protobuf==6.30.2
