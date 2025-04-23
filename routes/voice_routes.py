@@ -41,8 +41,7 @@ def create_new_conversation():
 @voice_bp.route("/make_call", methods=["GET"])
 def make_call():
     to_phone = request.args.get('to')
-    if not to_phone or not validate_phone_number(to_phone):
-        return jsonify({"error": "Invalid phone number"}), 400
+    
 
     try:
         conversation_id = create_new_conversation()
