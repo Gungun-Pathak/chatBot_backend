@@ -36,7 +36,7 @@ def make_call():
 
     # Initiate call
     call = client.calls.create(
-        url="http://127.0.0.1:5000/voice/voice",  # URL for the TwiML response
+        url="https://ashaai-backend.onrender.com/voice/voice",  # URL for the TwiML response
         to=to_phone_number,
         from_=from_phone_number
     )
@@ -51,10 +51,10 @@ def voice():
     # Gather speech input (Twilio will transcribe the audio)
     response.say("Hello! Please ask your question, and I will assist you.")
     response.record(
-        action="http://127.0.0.1:5000/voice/handle_recording",  # This is where the recording is processed
+        action="https://ashaai-backend.onrender.com/voice/handle_recording",  # This is where the recording is processed
         max_length=30,  # 30 seconds to speak
         transcribe=True,  # Automatically transcribe speech to text
-        transcribe_callback="http://127.0.0.1:5000/voice/handle_transcription"  # URL to handle transcription result
+        transcribe_callback="https://ashaai-backend.onrender.com/voice/handle_transcription"  # URL to handle transcription result
     )
     return Response(str(response), mimetype='application/xml')
 
