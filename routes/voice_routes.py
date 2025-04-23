@@ -14,7 +14,7 @@ from service.intent_service import detect_intent_and_data
 from service.sentiment_service import detect_sentiment
 from service.gemini_service import get_empowering_response
 
-from langchain_core.messages import HumanMessage, AIMessage
+from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
 
 # Blueprint for voice-related routes
@@ -69,9 +69,24 @@ def handle_transcription():
     chat_history = []
 
     if conversation_id:
-        conversation = conversations_collection.find_one({'_id': ObjectId(conversation_id)})
-        if conversation:
-            chat_history = deserialize_messages(conversation['messages'])
+        try:
+            conversation = conversations_collection.find_one({'_id': ObjectId(conversation_id)})
+            if conversation:
+                chat_history = deserialize_messages(conversation['messages'])
+        except Exception as e:
+            print(f"Invalid conversation ID format: {e}")
+            conversation_id = None
+
+    if not conversation_id:
+        # Start a new conversation
+        new_chat = [SystemMessage(content="You are a helpful voice assistant for women's career support.")]
+        inserted = conversations_collection.insert_one({
+            "messages": serialize_messages(new_chat),
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat()
+        })
+        conversation_id = str(inserted.inserted_id)
+        chat_history = new_chat
 
     # Intent detection
     intent_result = detect_intent_and_data(transcription)
@@ -127,7 +142,6 @@ def handle_transcription():
     response.say(answer)
 
     return Response(str(response), mimetype='application/xml')
-
 
 @voice_bp.route("/handle_recording", methods=["POST"])
 def handle_recording():
