@@ -30,14 +30,47 @@ def initialize_rag_system():
     ])
     history_aware_retriever = create_history_aware_retriever(model, retriever, contextualize_q_prompt)
 
-    # QA prompt
-    qa_prompt = ChatPromptTemplate.from_messages([
-        ("system", "You are an assistant answering based on the provided context:\n{context}"),
-        MessagesPlaceholder("chat_history"),
-        ("human", "{input}")
-    ])
-    question_answer_chain = create_stuff_documents_chain(model, qa_prompt)
+    # QA prompt (corrected version)
+    qa_prompt =  ChatPromptTemplate.from_messages([
+    ("system", """For event-related queries, ALWAYS respond with JSON using this structure:
+    {{
+        "summary": "Brief overview",
+        "sections": [
+            {{
+                "title": "Event Details",
+                "content": [
+                    "Dates: [event_dates]",
+                    "Location: [venue]",
+                    "Type: [event_type]",
+                    "Focus: [topics]"
+                ],
+                "icon": "calendar"
+            }}
+        ],
+        "links": [
+            {{
+                "text": "Official Website",
+                "url": "[event_url]",
+                "type": "event"
+            }}
+        ],
+        "actions": [
+            {{
+                "type": "register",
+                "text": "Register Now",
+                "url": "[registration_url]"
+            }}
+        ]
+    }}
+    
+    Context: {context}
+    """),
+    MessagesPlaceholder("chat_history"),
+    ("human", "{input}")
+])
 
+    question_answer_chain = create_stuff_documents_chain(model, qa_prompt)
+    
     # Final RAG chain
     rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
 
