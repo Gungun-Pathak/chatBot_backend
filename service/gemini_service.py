@@ -15,3 +15,10 @@ def get_empowering_response(topic="women empowerment") -> str:
     )
     response = gemini_model.invoke(prompt)
     return response.content if hasattr(response, "content") else str(response)
+
+def gemini_prompt_response(prompt: str) -> str:
+    """
+    General-purpose Gemini LLM prompt function.
+    """
+    response = gemini_model.invoke(prompt)
+    return response.content if hasattr(response, "content") else str(response)

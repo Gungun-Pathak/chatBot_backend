@@ -4,6 +4,7 @@ from routes.chat_routes import chat_bp
 from routes.conversation_routes import conversation_bp
 from routes.user_routes import user_bp 
 from routes.voice_routes import voice_bp
+from routes.resume_routes import resume_bp
 
 app = Flask(__name__)
 CORS(app, 
@@ -24,6 +25,7 @@ def register_routes(app):
     app.register_blueprint(conversation_bp, url_prefix="/conversation")
     app.register_blueprint(user_bp, url_prefix="/user") 
     app.register_blueprint(voice_bp, url_prefix='/voice')
+    app.register_blueprint(resume_bp, url_prefix="/resume")
 
 register_routes(app)
 

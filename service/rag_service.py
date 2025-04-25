@@ -5,7 +5,7 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_core.messages import AIMessage, HumanMessage
-from utils.document_loader import load_documents_from_json
+from utils.document_loader import load_documents_from_json_and_pdf
 
 
 def initialize_rag_system():
@@ -13,7 +13,7 @@ def initialize_rag_system():
     print("🔧 Initializing RAG system with real data...")
     start_time = time.time()
 
-    docs = load_documents_from_json()
+    docs = load_documents_from_json_and_pdf()
 
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     vectorstore = FAISS.from_documents(docs, embedding=embeddings)

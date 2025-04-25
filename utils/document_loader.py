@@ -1,9 +1,10 @@
 import json
 from langchain_core.documents import Document
+from langchain_community.document_loaders import PyPDFLoader
 
 
-def load_documents_from_json():
-    """Load documents from JSON files into LangChain format"""
+def load_documents_from_json_and_pdf():
+    """Load documents from JSON and PDF files into LangChain format"""
     docs = []
 
     # Load event data
@@ -21,7 +22,7 @@ Description: {event.get("description", "")}"""
     # Load LinkedIn jobs
     with open('data/linkedin_jobs.json', 'r', encoding='utf-8') as f:
         job_list = json.load(f)
-        if isinstance(job_list, list):  # Ensure it's a list
+        if isinstance(job_list, list):
             for job in job_list:
                 content = f"""Job Position: {job.get("job_position", "")}
 Company: {job.get("company_name", "")}
@@ -42,5 +43,15 @@ Published At: {article.get("published_datetime_utc", "")}
 Source: {article.get("source_name", "")}
 Link: {article.get("link", "")}"""
             docs.append(Document(page_content=content))
+
+    # Load first PDF - job listings
+    job_pdf_loader = PyPDFLoader("data/jobsForHer.pdf")
+    job_pdf_docs = job_pdf_loader.load()
+    docs.extend(job_pdf_docs)
+
+    # Load second PDF - FAQs
+    faq_pdf_loader = PyPDFLoader("data/faqs.pdf")
+    faq_pdf_docs = faq_pdf_loader.load()
+    docs.extend(faq_pdf_docs)
 
     return docs
