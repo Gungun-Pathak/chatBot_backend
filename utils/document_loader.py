@@ -54,4 +54,8 @@ Link: {article.get("link", "")}"""
     faq_pdf_docs = faq_pdf_loader.load()
     docs.extend(faq_pdf_docs)
 
+    tech_pdf_loader = PyPDFLoader("data/tech_news_merged.pdf")
+    tech_pdf_docs = tech_pdf_loader.load()
+    docs.extend(tech_pdf_docs)
+
     return docs
