@@ -1,61 +1,28 @@
-import json
 from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader
 
-
-def load_documents_from_json_and_pdf():
-    """Load documents from JSON and PDF files into LangChain format"""
+def load_documents_from_pdf():
+    """Load documents from PDF files only"""
     docs = []
 
-    # Load event data
-    with open('data/event_data.json', 'r', encoding='utf-8') as f:
-        events = json.load(f)["data"]
-        for event in events:
-            content = f"""Event: {event.get("name", "")}
-Date: {event.get("date_human_readable", "")}
-Venue: {event.get("venue", {}).get("full_address", "")}
-Virtual: {event.get("is_virtual", False)}
-Link: {event.get("link", "")}
-Description: {event.get("description", "")}"""
-            docs.append(Document(page_content=content))
+    # Load job listings PDF
+    faqs_pdf_loader = PyPDFLoader("data/faqs.pdf")
+    docs.extend(faqs_pdf_loader.load())
 
-    # Load LinkedIn jobs
-    with open('data/linkedin_jobs.json', 'r', encoding='utf-8') as f:
-        job_list = json.load(f)
-        if isinstance(job_list, list):
-            for job in job_list:
-                content = f"""Job Position: {job.get("job_position", "")}
-Company: {job.get("company_name", "")}
-Location: {job.get("job_location", "")}
-Posted On: {job.get("job_posting_date", "")}
-Apply Link: {job.get("job_link", "")}"""
-                docs.append(Document(page_content=content))
-        else:
-            print("Error: 'linkedin_jobs.json' is not a list!")
+    # Load events PDF
+    jobsforher_pdf_loader = PyPDFLoader("data/jobsForHer.pdf")  # Add your event PDF
+    docs.extend(jobsforher_pdf_loader.load())
 
-    # Load tech news
-    with open('data/tech_news.json', 'r', encoding='utf-8') as f:
-        tech_news = json.load(f)["data"]
-        for article in tech_news:
-            content = f"""Title: {article.get("title", "")}
-Summary: {article.get("snippet", "")}
-Published At: {article.get("published_datetime_utc", "")}
-Source: {article.get("source_name", "")}
-Link: {article.get("link", "")}"""
-            docs.append(Document(page_content=content))
+    # Load tech news PDF
+    tech_pdf_loader = PyPDFLoader("data/tech_news.pdf")
+    docs.extend(tech_pdf_loader.load())
 
-    # Load first PDF - job listings
-    job_pdf_loader = PyPDFLoader("data/jobsForHer.pdf")
-    job_pdf_docs = job_pdf_loader.load()
-    docs.extend(job_pdf_docs)
+    events_pdf_loader = PyPDFLoader("data/events.pdf")
+    docs.extend(events_pdf_loader.load())
 
-    # Load second PDF - FAQs
-    faq_pdf_loader = PyPDFLoader("data/faqs.pdf")
-    faq_pdf_docs = faq_pdf_loader.load()
-    docs.extend(faq_pdf_docs)
+    job_pdf_loader = PyPDFLoader("data/jobs1.pdf")
+    docs.extend(job_pdf_loader.load())
 
-    tech_pdf_loader = PyPDFLoader("data/tech_news_merged.pdf")
-    tech_pdf_docs = tech_pdf_loader.load()
-    docs.extend(tech_pdf_docs)
+
 
     return docs

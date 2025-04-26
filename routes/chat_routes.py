@@ -68,59 +68,119 @@ def validate_structure(data):
 
 def create_structured_fallback(text):
     """Create structured data from plain text"""
+    title = "Key Information"
+    is_job = False
+
+    # detect type
+    if "Job" in text or "Company" in text or "requirements" in text.lower():
+        title = "Job Details"
+        is_job = True
+    elif "Dates" in text or "Location" in text:
+        title = "Event Details"
+
     return {
         "summary": text,
         "sections": [{
-            "title": "Key Information",
+            "title": title,
             "content": extract_key_details(text),
             "icon": "info"
         }],
-        "links": extract_links(text),
+        "links": extract_links(text, is_job=is_job),
         "actions": []
     }
 
+
+
+def detect_job_context(text):
+    """Detect if the text seems job-related"""
+    job_keywords = ["Position", "Company", "Location", "Posted", "Focus", "Apply", "Career"]
+    return any(keyword.lower() in text.lower() for keyword in job_keywords)
+
 def extract_key_details(text):
     """Extract key details using enhanced pattern matching"""
-    patterns = {
+    event_patterns = {
         "Dates?": r"(Dates?:?)\s*(.+?)(?=\n|$)",
         "Location": r"(Location:?)\s*(.+?)(?=\n|$)",
         "Type": r"(Type:?)\s*(.+?)(?=\n|$)",
         "Focus": r"(Focus:?)\s*(.+?)(?=\n|$)"
     }
     
+    job_patterns = {
+        "Company": r"(Company:?)\s*(.+?)(?=\n|$)",
+        "Location": r"(Location:?)\s*(.+?)(?=\n|$)",
+        "Requirements": r"(Requirements?:?)\s*(.+?)(?=\n|$)",
+        "Benefits": r"(Benefits?:?)\s*(.+?)(?=\n|$)",
+    }
+    
     details = []
-    for label, pattern in patterns.items():
+    
+    # First try event patterns
+    for label, pattern in event_patterns.items():
         matches = re.findall(pattern, text, re.IGNORECASE)
         for match in matches:
             details.append(f"{match[0]} {match[1]}".strip())
     
+    if not details:
+        # Try job patterns if event fields not found
+        for label, pattern in job_patterns.items():
+            matches = re.findall(pattern, text, re.IGNORECASE)
+            for match in matches:
+                details.append(f"{match[0]} {match[1]}".strip())
+    
     return details if details else [text]
 
-def extract_links(text):
+def extract_links(text, is_job):
     """Extract URLs with context"""
     url_pattern = r'(https?://\S+)'
-    link_text_pattern = r'(\b(?:Website|Register|Details)\b:?\s*)(https?://\S+)'
     
+    if is_job:
+        link_text_pattern = r'(\b(?:Apply|Careers?|Career Page)\b:?\s*)(https?://\S+)'
+    else:
+        link_text_pattern = r'(\b(?:Website|Register|Details)\b:?\s*)(https?://\S+)'
+
     links = []
-    
-    # First try to find links with context
-    for match in re.finditer(link_text_pattern, text):
+
+    # Try to find links with context first
+    for match in re.finditer(link_text_pattern, text, re.IGNORECASE):
         links.append({
             "text": match.group(1).replace(":", "").strip(),
             "url": match.group(2),
-            "type": "website"
+            "type": "career" if is_job else "website"
         })
-    
-    # Fallback to find bare URLs
+
+    # Fallback: if no labeled links found, find bare URLs
     if not links:
         urls = re.findall(url_pattern, text)
         links = [{
-            "text": "More Information",
+            "text": "Company Careers Page" if is_job else "More Information",
             "url": url,
-            "type": "website"
+            "type": "career" if is_job else "website"
         } for url in urls]
-    
+
     return links
+
+def extract_actions(text, is_job):
+    """Extract action links"""
+    actions = []
+
+    if is_job:
+        action_pattern = r'(Apply Now):?\s*(https?://\S+)'
+        for match in re.finditer(action_pattern, text, re.IGNORECASE):
+            actions.append({
+                "type": "apply",
+                "text": match.group(1).strip(),
+                "url": match.group(2)
+            })
+    else:
+        action_pattern = r'(Register Now):?\s*(https?://\S+)'
+        for match in re.finditer(action_pattern, text, re.IGNORECASE):
+            actions.append({
+                "type": "register",
+                "text": match.group(1).strip(),
+                "url": match.group(2)
+            })
+
+    return actions
 
 def generate_fallback_text(structured_data):
     """Convert structured response to readable text format"""
@@ -128,11 +188,11 @@ def generate_fallback_text(structured_data):
         return "Here's the information I found:"
 
     text_parts = []
-    
+
     # Add summary
     if structured_data.get('summary'):
         text_parts.append(f"📌 {structured_data['summary']}")
-    
+
     # Process sections
     for section in structured_data.get('sections', []):
         section_text = []
@@ -141,21 +201,20 @@ def generate_fallback_text(structured_data):
         for item in section.get('content', []):
             section_text.append(f"• {item.strip('**')}")  # Remove markdown bold
         text_parts.append("\n".join(section_text))
-    
+
     # Process links
     if structured_data.get('links'):
         text_parts.append("\n🔗 Useful Links:")
         for link in structured_data['links']:
             text_parts.append(f"- {link.get('text', 'Link')}: {link.get('url', '')}")
-    
+
     # Process actions
     if structured_data.get('actions'):
         text_parts.append("\n📝 Actions:")
         for action in structured_data['actions']:
             text_parts.append(f"- {action.get('text', 'Action available')}")
-    
-    return "\n".join(text_parts) if text_parts else "Please see the structured response."
 
+    return "\n".join(text_parts) if text_parts else "Please see the structured response."
 @chat_bp.route("/ask", methods=["POST"])
 def ask():
     data = request.get_json()
