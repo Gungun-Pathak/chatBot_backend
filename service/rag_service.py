@@ -31,99 +31,128 @@ def initialize_rag_system():
     history_aware_retriever = create_history_aware_retriever(model, retriever, contextualize_q_prompt)
 
     # QA prompt (corrected version)
-    qa_prompt = ChatPromptTemplate.from_messages([
-    ("system", """For event-related queries, ALWAYS respond with JSON using this structure and respond only from context provided:
-    {{
-        "summary": "Brief overview",
-        "sections": [
-            {{
-                "title": "Event Details",
-                "content": [
-                    "Dates: [event_dates]",
-                    "Location: [venue]",
-                    "Type: [event_type]",
-                    "Focus: [topics]"
-                ],
-                "icon": "calendar"
-            }}
-        ],
-        "links": [
-            {{
-                "text": "Official Website",
-                "url": "[event_url]",
-                "type": "event"
-            }}
-        ],
-        "actions": [
-            {{
-                "type": "register",
-                "text": "Register Now",
-                "url": "[registration_url]"
-            }}
-        ]
-    }}
+    qa_prompt =ChatPromptTemplate.from_messages([
+    ("system", """For event, job, or news-related queries, ALWAYS respond with JSON using this structure and only from context provided:
 
-For job-related queries, ALWAYS respond with JSON using this structure and respond only from context provided:
-    {{
-        "summary": "Brief overview",
-        "sections": [
-            {{
-                "title": "Job Details",
-                "content": [
-                    "Position: [job_title]",
-                    "Company: [company_name]",
-                    "Location: [job_location]",
-                    "Posted: [posted_date]",
-                    "Focus: [skills_focus]"
-                ],
-                "icon": "briefcase"
-            }}
-        ],
-        "links": [
-            {{
-                "text": "Company Careers Page",
-                "url": "[company_career_url]",
-                "type": "career"
-            }}
-        ],
-        "actions": [
-            {{
-                "type": "apply",
-                "text": "Apply Now",
-                "url": "[application_url]"
-            }}
-        ]
-    }}
+For Event Queries:
+{{
+    "summary": "Brief overview",
+    "sections": [
+        {{
+            "title": "Event Details",
+            "content": [
+                "Dates: [event_dates]",
+                "Location: [venue]",
+                "Type: [event_type]",
+                "Focus: [topics]"
+            ],
+            "icon": "calendar"
+        }}
+    ],
+    "links": [
+        {{
+            "text": "Official Website",
+            "url": "[event_url]",
+            "type": "event"
+        }}
+    ],
+    "actions": [
+        {{
+            "type": "register",
+            "text": "Register Now",
+            "url": "[registration_url]"
+        }}
+    ]
+}}
 
-For news-related queries, ALWAYS respond with JSON using this structure:
+For Job Queries:
+{{
+    "summary": "Brief overview",
+    "sections": [
+        {{
+            "title": "Job Details",
+            "content": [
+                "Position: [job_title]",
+                "Company: [company_name]",
+                "Location: [job_location]",
+                "Posted: [posted_date]",
+                "Focus: [skills_focus]"
+            ],
+            "icon": "briefcase"
+        }}
+    ],
+    "links": [
+        {{
+            "text": "Company Careers Page",
+            "url": "[company_career_url]",
+            "type": "career"
+        }}
+    ],
+    "actions": [
+        {{
+            "type": "apply",
+            "text": "Apply Now",
+            "url": "[application_url]"
+        }}
+    ]
+}}
+
+For News Queries:
+{{
+    "summary": "[news_title]",
+    "sections": [
+        {{
+            "title": "News Details",
+            "content": [
+                "Title: [news_title]",
+                "Date: [news_date]",
+                "Source: [news_source]",
+                "Highlights: [description or important points]"
+            ],
+            "icon": "newspaper"
+        }}
+    ],
+    "links": [
+        {{
+            "text": "Read Full Article",
+            "url": "[article_url]",
+            "type": "news"
+        }}
+    ]
+}}
+
+Special Instructions for JobsForHer Foundation:
+- If the user query asks about **jobs** at **JobsForHer Foundation**, DO NOT provide job-related JSON.
+- Instead, retrieve  information about JobsForHer Foundation based ONLY on the context.
+- Format the response in this structure:
+    
     {{
-        "summary": "Brief overview",
+        "summary": "JobsForHer Foundation Overview",
         "sections": [
             {{
-                "title": "News Details",
+                "title": "Foundation Details",
                 "content": [
-                    "Title: [news_title]",
-                    "Date: [news_date]",
-                    "Source: [news_source]",
-                    "Highlights: [important_points]"
+                    "Mission: [mission_statement]",
+                    "Focus: [focus_areas]",
+                    "Programs: [programs_offered]"
                 ],
-                "icon": "newspaper"
+                "icon": "foundation"
             }}
         ],
         "links": [
             {{
-                "text": "Read Full Article",
-                "url": "[article_url]",
-                "type": "news"
+                "text": "Foundation Website",
+                "url": "[foundation_url]",
+                "type": "foundation"
             }}
         ]
     }}
+- If the user asks any other question about JobsForHer Foundation (not job-related), also answer based ONLY on context and using the same structure.
 
 IMPORTANT RULES:
-- You MUST only use information strictly from the given context.
-
+- Only use information strictly from the provided context.
 - Never invent or assume missing information.
-- Never use your own knowledge or training data beyond the provided context.
+
 
 Context: {context}
     """),
