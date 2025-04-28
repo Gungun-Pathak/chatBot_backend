@@ -14,13 +14,13 @@ def load_documents_from_pdf():
     docs.extend(jobsforher_pdf_loader.load())
 
     # Load tech news PDF
-    tech_pdf_loader = PyPDFLoader("data/tech_news.pdf")
+    tech_pdf_loader = PyPDFLoader("data/news.pdf")
     docs.extend(tech_pdf_loader.load())
 
-    events_pdf_loader = PyPDFLoader("data/events.pdf")
+    events_pdf_loader = PyPDFLoader("data/tech_event.pdf")
     docs.extend(events_pdf_loader.load())
 
-    job_pdf_loader = PyPDFLoader("data/jobs1.pdf")
+    job_pdf_loader = PyPDFLoader("data/job1.pdf")
     docs.extend(job_pdf_loader.load())
 
 
